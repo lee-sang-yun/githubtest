@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7c-uD-Y8r">
+                                <rect key="frame" x="139" y="159" width="136" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dwp-lA-Y2O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="Akz-Z4-Nmk">
+                                <rect key="frame" x="47" y="264" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="PKN-Kg-ZZL"/>
+                                    <constraint firstAttribute="height" constant="320" id="QXO-aF-moN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,000 Won" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z50-DV-bPy">
+                                <rect key="frame" x="61" y="655" width="292" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lK5-3w-82f">
+                                <rect key="frame" x="157" y="773" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="G5g-h7-dte"/>
+                                    <constraint firstAttribute="height" constant="50" id="YnD-hc-a3K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yNx-JB-KtV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z50-DV-bPy" secondAttribute="bottom" constant="159" id="6D8-iR-lYw"/>
+                            <constraint firstItem="lK5-3w-82f" firstAttribute="centerX" secondItem="Z50-DV-bPy" secondAttribute="centerX" id="Aax-hx-9lZ"/>
+                            <constraint firstItem="Akz-Z4-Nmk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CMN-ef-IjU"/>
+                            <constraint firstItem="Z50-DV-bPy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Clf-Y0-uSl"/>
+                            <constraint firstItem="Z50-DV-bPy" firstAttribute="top" secondItem="Akz-Z4-Nmk" secondAttribute="bottom" constant="71" id="GY2-yQ-Cs9"/>
+                            <constraint firstItem="lK5-3w-82f" firstAttribute="top" secondItem="Z50-DV-bPy" secondAttribute="bottom" constant="70" id="Wow-Qw-kbN"/>
+                            <constraint firstItem="Akz-Z4-Nmk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="ZpR-oc-V1g"/>
+                            <constraint firstItem="b7c-uD-Y8r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="Zwi-fH-vhs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b7c-uD-Y8r" secondAttribute="trailing" constant="139" id="fS0-X2-a0L"/>
+                            <constraint firstItem="b7c-uD-Y8r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="iIs-j6-kJj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="PriceLabel" destination="Z50-DV-bPy" id="ihK-dv-457"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="-189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test" width="64" height="87.333335876464844"/>
+    </resources>
+</document>
